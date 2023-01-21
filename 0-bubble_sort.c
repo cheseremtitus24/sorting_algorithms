@@ -105,19 +105,19 @@ void swap(int *array, int index_i, int index_j, size_t s)
 	/* checks that indexes are not the same and */
 	if (!array)
 	{
-		perror("array can't be NULL");
+		/*perror("array can't be NULL");*/
 		exit(EXIT_FAILURE);
 	}
 	if (index_i == index_j)
 	{
-		perror("Indexes can't be the same");
+		/*perror("Indexes can't be the same");*/
 		exit(EXIT_FAILURE);
 	}
 
 	/* that they are valid.[not out of bounds indexes] */
 	if (index_i > (s - 1) || index_j > (s - 1))
 	{
-		perror("Index can't be an out of bounds index");
+		/*perror("Index can't be an out of bounds index");*/
 		exit(EXIT_FAILURE);
 	}
 /* Performing a swap*/
