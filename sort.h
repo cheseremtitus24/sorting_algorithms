@@ -9,9 +9,9 @@ void bubble_sort(int *array, size_t size);
 
 void print_array(const int *array, size_t size);
 
-void swap(int *array, int index_i, int index_j, size_t s);
+void swap(int *array, size_t index_i, size_t index_j, size_t s);
 
-bool compare_pre_post_indexes(int *array, int current_index, size_t size);
+bool compare_pre_post_indexes(int *array, size_t current_index, size_t size);
 
 /**
  * struct listint_s - Doubly linked list node

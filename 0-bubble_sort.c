@@ -20,7 +20,7 @@ void bubble_sort(int *array, size_t size)
 	/* only continue bubbling when a swap occurs */
 	bool swap_occurred;
 	bool do_swap;
-	int i;
+	size_t i;
 
 	/* initialize swap_occurred to true for program to initialize the loop */
 	swap_occurred = true;
@@ -60,7 +60,7 @@ void bubble_sort(int *array, size_t size)
  * the next item as it will be array out of bounds.
  * Return: true when post is less that pre else returns false
  */
-bool compare_pre_post_indexes(int *array, int current_index, size_t size)
+bool compare_pre_post_indexes(int *array, size_t current_index, size_t size)
 {
 	int next_index;
 	int current_array_item;
@@ -85,6 +85,7 @@ bool compare_pre_post_indexes(int *array, int current_index, size_t size)
 	/* already sorted thus do nothing */
 	if (current_array_item < next_array_item)
 		return (false);
+	return (false);
 
 }
 
@@ -98,7 +99,7 @@ bool compare_pre_post_indexes(int *array, int current_index, size_t size)
  * Description: Swaps value items in the specified indices
  * Return: Void
  */
-void swap(int *array, int index_i, int index_j, size_t s)
+void swap(int *array, size_t index_i, size_t index_j, size_t s)
 {
 	int temp;
 	/* checks that array is not null */
