@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "sort.h"
 /**
  * selection_sort-Sorts an array using Selection Sorting
@@ -17,8 +15,9 @@ void selection_sort(int *array, size_t size)
 	size_t i, j, position, swap;
 
 	/* handle case when array pointer is invalid*/
-	if (!array || size <= 0)
+	if (!array || size <= 1)
 		exit(EXIT_FAILURE);
+
 	for (i = 0; i < (size - 1); i++)
 	{
 		position = i;
