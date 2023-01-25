@@ -14,6 +14,8 @@ void swap(int *array, size_t index_i, size_t index_j, size_t s);
 bool compare_pre_post_indexes(int *array, size_t current_index, size_t size);
 
 void selection_sort(int *array, size_t size);
+int partition(int arr[], int low, int high);
+void quicksort(int arr[], int low, int high, size_t size);
 void quick_sort(int *array, size_t size);
 
 /**
